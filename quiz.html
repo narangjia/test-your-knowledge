@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<title>test your knowledge</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Mono&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="quiz.css">
+	</head>
+	<body>
+		<div class="center-align sticky">
+			<h1 id="time"></h1>
+		</div>
+		<div class="center-align">
+			<h1>Test Your Knowledge</h1>
+		</div>
+		<div id="questions">
+			<h2 id="heading">Answer the following questions</h2>
+			<div class="light-green">
+				<br>
+				<br>
+				<p class="question">What is the difference between blue cheese and normal cheese?</p>
+				<p><input id="right-answer1" type="radio" name="question-1">More mild</p>
+				<p><input type="radio" name="question-1">Nothing</p>
+				<p><input type="radio" name="question-1">More salty</p>
+				<p><input type="radio" name="question-1">Less salty</p>
+				<br>
+			</div>
+			<div class="light-blue">
+				<br>
+				<br>
+				<p class="question">What is the main ingredient in ketchup?</p>
+				<p><input type="radio"name="question-2">Salt</p>
+				<p><input id="right-answer2" type="radio" name="question-2">Tomato</p>
+				<p><input type="radio" name="question-2">Capsicum</p>
+				<p><input type="radio" name="question-2">Pepper</p>
+				<br>
+			</div>
+			<div class="light-green">
+				<br>
+				<br>
+				<p class="question">What is the difference between Indian cheese and American cheese?</p>
+				<p><input id="right-answer3" type="radio" name="question-3">Indian cheese is saltier</p>
+				<p><input type="radio" name="question-3">American cheese is sweeter</p>
+				<p><input type="radio" name="question-3">American cheese is saltier</p>
+				<p><input type="radio" name="question-3">Indian cheese is sweeter</p>
+				<br>
+			</div>
+			<div class="light-blue">
+				<br>
+				<br>
+				<p class="question">Where do we get salt from?</p>
+				<p><input type="radio" name="question-4">From salt rock</p>
+				<p><input type="radio" name="question-4">From sea</p>
+				<p><input id="right-answer4" type="radio" name="question-4">Both of these</p>
+				<p><input type="radio" name="question-4">None of these</p>
+				<br>
+			</div>
+			<div class="light-green">
+				<br>
+				<br>
+				<p class="question">What is the main ingredient in lazania?</p>
+				<p><input type="radio" name="question-5">Sauce</p>
+				<p><input type="radio" name="question-5">Vegetables</p>
+				<p><input id="right-answer5" type="radio" name="question-5">Cheese</p>
+				<p><input type="radio" name="question-5">None of these</p>
+				<br>
+			</div>
+			<div class="light-blue">
+				<br>
+				<br>
+				<p class="question">What is the main ingredient in mayonise?</p>
+				<p><input type="radio" name="question-6">Sauce</p>
+				<p><input  id="right-answer6"type="radio" name="question-6">Cheese sauce</p>
+				<p><input type="radio" name="question-6">Cucumber</p>
+				<p><input type="radio" name="question-6">All of the above</p>
+				<br>
+			</div>
+			<div class="light-green">
+				<br>
+				<br>
+				<p class="question">What colours capsicums come in?</p>
+				<p><input type="radio" name="question-7">Green</p>
+				<p><input type="radio" name="question-7">Yellow</p>
+				<p><input type="radio" name="question-7">Red</p>
+				<p><input id="right-answer7" type="radio" name="question-7">All of these</p>
+				<br>
+			</div>
+			<div class="light-blue">
+				<br>
+				<br>
+				<p class="question">Veeba is a brand for?</p>
+				<p><input id="right-answer8"type="radio" name="question-8">Sauces</p>
+				<p><input type="radio" name="question-8">Cheese</p>
+				<p><input type="radio" name="question-8">Paper</p>
+				<p><input type="radio" name="question-8">None of these</p>
+				<br>
+			</div>
+			<div class="light-green">
+				<br>
+				<br>
+				<p class="question">What is parsely and methi is in colour?</p>
+				<p><input type="radio" name="question-9">White</p>
+				<p><input type="radio" name="question-9">Yellow</p>
+				<p><input type="radio" name="question-9">Red</p>
+				<p><input id="right-answer9"type="radio" name="question-9">Green</p>
+				<br>
+			</div>
+			<div class="light-blue">
+				<br>
+				<br>
+				<p class="question">What is the colour of black coffee?</p>
+				<p><input type="radio" name="question-10">White</p>
+				<p><input type="radio" name="question-10">Yellow</p>
+				<p><input type="radio" name="question-10">Red</p>
+				<p><input id="right-answer10"type="radio" name="question-10">Black</p>
+				<br>
+			</div>
+			<br>
+			<button id="submit" onclick="calculateResult()">Submit</button>
+			<button id="clear" onclick="clearAllOptions()">Clear All</button>
+			<br>
+			<br>
+			<br>
+	    </div>
+		<div id="test-result" class="center-align">
+			<h3>Your result is</h3>
+			<h1 id="score"></h1>
+			<h2 id="green">You have passed the test</h2>
+			<img id="happy" src="smile.jpg" alt="smily face" width="200">
+			<h2 id="red">You have failed</h2>
+			<img id="sad" src="sad.jpg" alt="sad face" width="200">
+
+		</div>
+		<script src="quiz.js">
+		</script>
+		<script src="timer.js">
+		</script>
+
+	</body>
+</html>
